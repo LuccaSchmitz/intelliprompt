@@ -1,0 +1,16 @@
+{
+  "name": "IntelliPrompt",
+  "short_name": "IntelliPrompt",
+  "description": "AI-Powered Prompt Engineering Tool",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#09090b",
+  "theme_color": "#3b82f6",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+} 

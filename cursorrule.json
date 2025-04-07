@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "name": "Component Structure",
+      "pattern": "components/**/*.tsx",
+      "message": "React components should use named exports, follow PascalCase naming, and include proper type definitions.",
+      "severity": "warning"
+    },
+    {
+      "name": "Page Structure",
+      "pattern": "app/**/*.tsx",
+      "message": "Next.js page components should export as default and include proper metadata when needed.",
+      "severity": "warning"
+    },
+    {
+      "name": "Hooks Pattern",
+      "pattern": "hooks/**/*.ts",
+      "message": "Custom hooks should be prefixed with 'use' and follow camelCase naming convention.",
+      "severity": "error"
+    },
+    {
+      "name": "Tailwind Classes Order",
+      "pattern": "**/*.tsx",
+      "regex": "className=\"[^\"]{100,}\"",
+      "message": "Long className strings should be organized using clsx or cn utility for better readability.",
+      "severity": "warning"
+    },
+    {
+      "name": "API Routes",
+      "pattern": "app/api/**/*.ts",
+      "message": "API routes should properly handle errors and return appropriate status codes.",
+      "severity": "warning"
+    },
+    {
+      "name": "Type Definitions",
+      "pattern": "**/*.tsx",
+      "regex": "React\\.FC<",
+      "message": "Prefer function declarations with explicit return types over React.FC.",
+      "severity": "info"
+    },
+    {
+      "name": "Import Order",
+      "pattern": "**/*.{ts,tsx}",
+      "message": "Imports should be grouped: 1) React/Next imports, 2) External libs, 3) Internal components/utils, 4) Types/interfaces, 5) Styles.",
+      "severity": "info"
+    },
+    {
+      "name": "State Management",
+      "pattern": "**/*.{ts,tsx}",
+      "regex": "useState\\([^)]*\\)",
+      "message": "Consider using a custom hook for complex state logic across components.",
+      "severity": "info"
+    },
+    {
+      "name": "UI Component Usage",
+      "pattern": "**/*.tsx",
+      "message": "Prefer using UI components from the components/ui directory to maintain consistency.",
+      "severity": "info"
+    },
+    {
+      "name": "Image Optimization",
+      "pattern": "**/*.tsx",
+      "regex": "<img",
+      "message": "Use Next.js Image component instead of HTML img tag for better performance.",
+      "severity": "warning"
+    },
+    {
+      "name": "CSS Guidelines",
+      "pattern": "**/*.css",
+      "message": "Prefer Tailwind utility classes. Custom CSS should be minimal and follow the project's naming conventions.",
+      "severity": "info"
+    },
+    {
+      "name": "Form Validation",
+      "pattern": "**/*.tsx",
+      "regex": "<form",
+      "message": "Use react-hook-form with zod for form validation following project patterns.",
+      "severity": "info"
+    },
+    {
+      "name": "TypeScript Strictness",
+      "pattern": "**/*.{ts,tsx}",
+      "regex": "(any|\\[\\]:\\s*any)",
+      "message": "Avoid using 'any' type. Define proper interfaces or types instead.",
+      "severity": "warning"
+    },
+    {
+      "name": "Layout Components",
+      "pattern": "app/**/layout.tsx",
+      "message": "Layout components should be lightweight and focus on structure rather than logic.",
+      "severity": "info"
+    },
+    {
+      "name": "Error Handling",
+      "pattern": "**/*.{ts,tsx}",
+      "regex": "try\\s*\\{[^}]*\\}\\s*catch\\s*\\([^)]*\\)\\s*\\{[^}]*console\\.error",
+      "message": "Implement proper error handling beyond console.error statements.",
+      "severity": "warning"
+    }
+  ]
+} 

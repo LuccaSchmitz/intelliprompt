@@ -1,0 +1,6 @@
+{
+  "/api/demo-usage/route": "app/api/demo-usage/route.js",
+  "/api/enhance-prompt/route": "app/api/enhance-prompt/route.js",
+  "/page": "app/page.js",
+  "/demo/page": "app/demo/page.js"
+}
